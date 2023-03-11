@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sharwan - Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a9317f29e6.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fas fa fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>
+            
+              Hi, I'm <span>Sharwan Kumar</span><br />
+              from SRM-IST, KTR</span
+            >
+          </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-column-1">
+            <img src="./user.PNG" alt="" srcset="" />
+          </div>
+          <div class="about-column-2">
+            <h1 class="subtitle">About Me</h1>
+            <p>
+              I'm Sharwan Kumar. I did my schooling from Delhi Public School Sushant Lok. I got 90% marks in 10th class and 84% marks in 12th class. I am current doing Computer science Engineering with specilization in Information technology from SRM Institute of science and technology, Kattankulathur. My hobbies are playing football and basketball. 
+            </p>
+            <div class="tabtitle">
+              <p class="tablinks activelink" onclick="opentab('Skills')">
+                Skills
+              </p>
+              <p class="tablinks" onclick="opentab('Experience')">Experience</p>
+              <p class="tablinks" onclick="opentab('Education')">Education</p>
+            </div>
+
+            <div class="tabcontents activetab" id="Skills">
+              <ul>
+                <li><span>Language Known</span><br />C,C++,Python</li>
+                <li><span>UI/UX Designing</span><br />Poster Designing</li>
+                <li><span>Web Development</span><br />Making Website</li>
+                <li><span>Machine Learning</span><br />Data cleaning</li>
+              </ul>
+            </div>
+
+            <div class="tabcontents" id="Experience">
+              <ul>
+                <li>
+                  <span>2021 June - 2021 December</span><br />Intern at Deeva
+                  Community
+                </li>
+                <li>
+                  <span>2021 December - 2022 february</span><br />Self Learning
+                  Web development
+                </li>
+                <li>
+                  <span>2022 March - 2022 May</span><br />Intern at skill vertex
+                  in machine Learning
+                </li>
+              </ul>
+            </div>
+
+            <div class="tabcontents" id="Education">
+              <ul>
+                <li>
+                  <span>2018</span><br />10th Class from Delhi Public Sushant
+                  Lok,Gurugram
+                </li>
+                <li>
+                  <span>2020</span><br />12th class from Delhi Public Sushant
+                  Lok,Gurugram
+                </li>
+                <li><span>2020-2024</span><br />Engineering in SRM-IST</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- services section -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="subtitle">My Services</h1>
+        <div class="serviceslist">
+          <div>
+            <i class="fa fa-solid fa-crop"></i>
+            <h2>UI/UX</h2>
+            <p>
+              Worked as UI/UX developer in Deeva Community.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa fa-solid fa-code"></i>
+            <h2>Web Development</h2>
+            <p>
+              I have good knowledge in both front-end and back-end and worked on different projects. 
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+
+          <div>
+            <i class="fa fa-duotone fa-laptop"></i>
+            <h2>Machine Learning</h2>
+            <p>
+              I did internship in machine Learning domain with skill vertex company and also worked on projects with it.
+            </p>
+            <a href="#">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <--------portfolio---------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="subtitle">My work</h1>
+        <div class="worklist">
+          <div class="work">
+            <img src="./work-1.png" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>
+                Work in progress
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./work-2.png" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>
+                Work in progress.
+              </p>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./work-3.png" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p>
+                Work in progress
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- <----------Contact---------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="columnleft">
+            <h1 class="subtitle">Contact Me</h1>
+            <p>
+              <i class="fa fa-solid fa-paper-plane"></i>yadavsharwan28@gmail.com
+            </p>
+            <p><i class="fa fa-solid fa-phone"></i>9319167411</p>
+            <div class="socialicons">
+              <a href="https://www.facebook.com/"
+                ><i class="fa fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="/images/my-cv.pdf" download class="btn btn2"
+              >Download CV</a
+            >
+          </div>
+          <div class="columnright">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2 btn3">Submit</button>
+            </form>
+            <span id="msgsend"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Sharwan Kumar <i class="fa fa-solid fa-heart"></i>.</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tablinks");
+      var tabcontents = document.getElementsByClassName("tabcontents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("activelink");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("activetab");
+        }
+        event.currentTarget.classList.add("activelink");
+        document.getElementById(tabname).classList.add("activetab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px ";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwwuenmSzbq0XV0CUD_czDCPcKKKih95MumaZHWFZjugNNijD9ig6U41m55fnavFB1K/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msgsend = document.getElementById("msgsend");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msgsend.innerHTML = "Message send successfully";
+            setTimeout(function () {
+              msgsend.innerHTML = "";
+            }, 3000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+
+    
+    </script>
+  </body>
+</html>
